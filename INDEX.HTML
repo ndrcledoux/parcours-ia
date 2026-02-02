@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parcours de formation IA - Éducation</title>
+  <meta name="description" content="Parcours pédagogique pour former les élèves à l'usage responsable et efficace de l'IA." />
+  <link rel="icon" href="favicon.png" />
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #52606d;
+      --primary: #1d4ed8;
+      --accent: #7c3aed;
+      --border: #e3e7ee;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1d4ed8 0%, #5b21b6 100%);
+      color: #fff;
+      padding: 64px 20px 72px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      display: grid;
+      gap: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 3vw, 3rem);
+      line-height: 1.2;
+    }
+
+    .hero p {
+      max-width: 700px;
+      font-size: 1.1rem;
+    }
+
+    .hero .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .pill {
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+    }
+
+    main {
+      padding: 40px 0 64px;
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+      color: #0f172a;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: var(--muted);
+    }
+
+    li::before {
+      content: "•";
+      color: var(--primary);
+      font-weight: bold;
+      margin-top: 2px;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 16px;
+    }
+
+    .timeline-item {
+      display: grid;
+      gap: 8px;
+      padding: 16px;
+      border-radius: 12px;
+      background: #f1f5ff;
+      border: 1px solid #d9e2ff;
+    }
+
+    .timeline-item span {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .cta a {
+      text-decoration: none;
+      background: var(--primary);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 0 40px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 48px 20px 56px;
+      }
+
+      .hero .meta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container hero">
+      <h1>Parcours de formation IA pour les élèves</h1>
+      <p>
+        Un parcours progressif pour comprendre, utiliser et questionner l'intelligence artificielle en classe.
+        Chaque étape combine apports théoriques, ateliers pratiques et réflexion éthique afin de développer une
+        culture numérique solide.
+      </p>
+      <div class="meta">
+        <span class="pill">Niveaux : collège &amp; lycée</span>
+        <span class="pill">Durée : 6 à 8 semaines</span>
+        <span class="pill">Modalité : cours + ateliers</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section>
+        <h2>Objectifs pédagogiques</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Comprendre</h3>
+            <p>Découvrir le fonctionnement des modèles d'IA, leurs données d'entraînement et leurs limites.</p>
+          </div>
+          <div class="card">
+            <h3>Utiliser</h3>
+            <p>Apprendre à formuler des prompts efficaces et vérifier la fiabilité des réponses.</p>
+          </div>
+          <div class="card">
+            <h3>Responsabiliser</h3>
+            <p>Identifier les enjeux éthiques : biais, plagiat, protection des données et esprit critique.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Progression proposée</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span>Semaine 1 · Découverte</span>
+            <p>Qu'est-ce qu'une IA ? Panorama d'usages, forces et limites, mini-débat guidé.</p>
+          </div>
+          <div class="timeline-item">
+            <span>Semaine 2 · Données et modèles</span>
+            <p>Simulation d'apprentissage : classer des exemples, comprendre les erreurs et le surapprentissage.</p>
+          </div>
+          <div class="timeline-item">
+            <span>Semaine 3 · Prompts efficaces</span>
+            <p>Atelier d'écriture de prompts, consignes précises, formats attendus, itérations.</p>
+          </div>
+          <div class="timeline-item">
+            <span>Semaine 4 · Vérification</span>
+            <p>Comparer les réponses de l'IA avec des sources fiables, apprendre à fact-checker.</p>
+          </div>
+          <div class="timeline-item">
+            <span>Semaine 5 · Créativité augmentée</span>
+            <p>Créer une affiche, un scénario ou un plan d'exposé avec l'IA et expliquer ses choix.</p>
+          </div>
+          <div class="timeline-item">
+            <span>Semaine 6 · Éthique et citoyenneté</span>
+            <p>Étude de cas sur les biais, la vie privée, le droit d'auteur et les usages responsables.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Activités clés</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Atelier “IA ou humain ?”</h3>
+            <ul>
+              <li>Analyser des productions mixtes.</li>
+              <li>Repérer les indices de génération automatique.</li>
+              <li>Discuter de la valeur de l'originalité.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Mini-projet d'équipe</h3>
+            <ul>
+              <li>Choisir un sujet de société.</li>
+              <li>Utiliser l'IA pour préparer un argumentaire.</li>
+              <li>Présenter un point de vue critique.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Journal de bord</h3>
+            <ul>
+              <li>Documenter chaque usage de l'IA.</li>
+              <li>Noter les limites observées.</li>
+              <li>Formuler des règles personnelles.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Évaluation et livrables</h2>
+        <div class="card">
+          <ul>
+            <li>Quiz diagnostic en début et fin de parcours.</li>
+            <li>Grille d'évaluation du mini-projet (qualité, rigueur, esprit critique).</li>
+            <li>Charte d'usage responsable rédigée par la classe.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Ressources conseillées</h2>
+        <div class="card">
+          <ul>
+            <li>Guides officiels sur l'IA en éducation (EdTech, CNIL, UNESCO).</li>
+            <li>Exemples de prompts adaptés au niveau des élèves.</li>
+            <li>Outils de vérification des sources et de détection de biais.</li>
+          </ul>
+          <div class="cta">
+            <a href="https://bacstmg.fr/cours/IA/parcours-formation-ia.html" target="_blank" rel="noopener noreferrer">
+              Voir un exemple détaillé
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        Parcours conçu pour accompagner les enseignants et former des élèves responsables face à l'IA.
+        Adaptable selon le temps disponible et les projets disciplinaires.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
